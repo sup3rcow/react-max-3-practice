@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 
 import AddUser from "./components/Users/AddUser";
 import UserList from "./components/Users/UserList";
@@ -9,10 +9,11 @@ function App() {
     setUsersListHandler((prevState) => [user, ...prevState]);
   };
   return (
-    <div>
+    /* <React.Fragment> ili <Fragment> ili <> ili naš custom <Wrapper> */
+    <Fragment>
       <AddUser onAddUser={onAddUserHandler}></AddUser>
       <UserList users={usersList}></UserList>
-    </div>
+    </Fragment>
   );
 }
 
