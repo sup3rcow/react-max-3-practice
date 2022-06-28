@@ -1,7 +1,7 @@
 import style from "./AddUser.module.css";
 import Card from "../UI/Card";
 import React from "react";
-import Button from "components/UI/Button";
+import Button from "../UI/Button";
 
 const AddUser = (props) => {
   const addUserHandler = (e) => {
